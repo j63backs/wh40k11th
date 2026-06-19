@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="114" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="115" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="015a-6212-d737-9044" name="Index - Thousand Sons"/>
   </publications>
@@ -98,13 +98,13 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
         <profile id="281a-fced-cb79-1fb1" name="1. Destiny&apos;s Ruin (Psychic)" hidden="false" typeId="6be6-a982-36ad-841a" typeName="Cabal Rituals">
           <characteristics>
             <characteristic name="Cost" typeId="ace0-c8c2-e1fe-18b0">5</characteristic>
-            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one enemy unit within 24&quot; of and visible to the manifesting model. Until the end of the phase, each time a THOUSAND SONS model from your army makes an attack that targets that unit, re-roll a Hit roll of 1. If the Psychic test result for this Ritual was 10+, you can re-roll the Hit roll instead.</characteristic>
+            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one enemy unit within 24&quot; of and visible to the manifesting model. Until the end of the phase, each time a THOUSAND SONS or SCINTILLATING LEGIONS model from your army makes an attack that targets that unit, re‑roll a Hit roll of 1. If the Psychic test result for this Ritual was 10+, you can re‑roll the Hit roll instead.</characteristic>
           </characteristics>
         </profile>
         <profile id="2b05-d481-749c-5dc2" name="2. Temporal Surge (Psychic)" hidden="false" typeId="6be6-a982-36ad-841a" typeName="Cabal Rituals">
           <characteristics>
             <characteristic name="Cost" typeId="ace0-c8c2-e1fe-18b0">6</characteristic>
-            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one friendly THOUSAND SONS unit that is not within Engagement Range of one or more enemy units and is within 24&quot; of and visible to the manifesting model. That unit can make a Normal move of up to D6&quot;. If the Psychic test result for this Ritual was 10+, that unit can make a Normal move of up to 6&quot; instead. In either case, until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
+            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one friendly THOUSAND SONS or SCINTILLATING LEGIONS unit that is not within Engagement Range of one or more enemy units and is within 24&quot; of and visible to the manifesting model. That unit can make a Normal move of up to D6&quot;. If the Psychic test result for this Ritual was 10+, that unit can make a Normal move of up to 6&quot; instead. In either case, until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
         <profile id="d0ad-643f-41db-76b4" name="3. Doombolt (Psychic)" hidden="false" typeId="6be6-a982-36ad-841a" typeName="Cabal Rituals">
@@ -116,7 +116,7 @@ No **^^Scintillating Legions**^^ models from your army can be your **^^Warlord**
         <profile id="e595-1ea6-ed77-6206" name="5. Twist of Fate (Psychic)" hidden="false" typeId="6be6-a982-36ad-841a" typeName="Cabal Rituals">
           <characteristics>
             <characteristic name="Cost" typeId="ace0-c8c2-e1fe-18b0">9</characteristic>
-            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one enemy unit within 24&quot; of and visible to the manifesting model. Until the end of the phase, each time a THOUSAND SONS model from your army makes an attack that targets that unit, improve the Armour Penetration characteristic of that attack by 1. If the Psychic test result for this Ritual was 12+, improve the Armour Penetration characteristic of that attack by 2 instead.</characteristic>
+            <characteristic name="Effect" typeId="4e3c-58dd-9e6e-e1f4">Select one enemy unit within 24&quot; of and visible to the manifesting model. Until the end of the phase, each time a THOUSAND SONS or SCINTILLATING LEGIONS model from your army makes an attack that targets that unit, improve the Armour Penetration characteristic of that attack by 1. If the Psychic test result for this Ritual was 12+, improve the Armour Penetration characteristic of that attack by 2 instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -774,6 +774,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
           </modifiers>
         </infoLink>
         <infoLink id="f2e5-1c1c-b9f7-abcf" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="cb08-29a7-4ffc-2561" type="profile"/>
+        <infoLink name="Frame" id="bfd1-8258-704f-74ea" hidden="false" type="rule" targetId="88df-5150-ba1a-14ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c060-e70f-cb08-5bfe" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -982,6 +983,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
             <modifier type="append" value="D3" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Frame" id="4f99-31ee-8484-500f" hidden="false" type="rule" targetId="88df-5150-ba1a-14ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3849-e9db-1a61-4439" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1166,6 +1168,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
             <modifier type="append" value="D3" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Frame" id="0f09-8e4a-f141-4651" hidden="false" type="rule" targetId="88df-5150-ba1a-14ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1aaa-4fd4-3a5a-1075" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1297,6 +1300,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
             <modifier type="append" value="2" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Frame" id="3c69-c9ce-deff-260a" hidden="false" type="rule" targetId="88df-5150-ba1a-14ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e073-e0dd-6cef-69c3" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1426,7 +1430,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
         </profile>
         <profile id="1c30-967f-67dc-324d" name="Thousand Sons Vindicator" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">11</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
@@ -1442,6 +1446,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
           </modifiers>
         </infoLink>
         <infoLink id="2fd7-a2ae-1591-781f" name="Damaged: 1-4 wounds remaining" hidden="false" targetId="d44e-2f5-cadf-9eb" type="profile"/>
+        <infoLink name="Frame" id="42dc-eeb0-0905-0a25" hidden="false" type="rule" targetId="88df-5150-ba1a-14ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2f0e-3a85-c6d4-4724" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -3437,7 +3442,7 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
         </profile>
         <profile id="4b6d-e4b8-2cfa-42a6" name="Immaterial Flare (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp, add 1 to the Psychic test result.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly THOUSAND SONS PSYKER model is within 6&quot; of this model, each time that model Channels the Warp (pg 67), add 1 to the Psychic test result. This is not cumulative with any other modifiers to the Psychic test result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4578,9 +4583,12 @@ Infusion (Aura): While a friendly SEKHETAR ROBOTS unit is within 12&quot; of thi
         </profile>
         <profile name="Aetherstride (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2ea-4457-7ac2-7173">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride.
-If it does: It can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all enemy units.
-Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] ability. Until the end of the turn, it is not eligible to declare a charge.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride. If it does:
+
+
+▪ It can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all enemy units.
+▪ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] ability.
+▪ Until the end of the turn, it is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
         <profile name="Hunter of Souls (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fee5-696a-3638-597a">
@@ -6633,7 +6641,7 @@ Until the end of the turn, its Dark Blessing has the [SUSTAINED HITS D3] abilit
         </profile>
         <profile name="Malign Trickery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7c4-aecc-33ff-60c5">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9&quot; of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6&quot;.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent&apos;s Movement phase, if an enemy unit ends a move within 8&quot; of this unit, if this unit is not within Engagement Range of one or more enemy units, this unit can make a Normal move of up to D6&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8524,7 +8532,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="a70c-2007-30f7-a357" name="Cabal of Sorcerers" hidden="false">
-      <description>If your Army Faction is THOUSAND SONS, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals from those listed on the right. To do so, select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has manifested this turn, then take a Psychic test for that model by following the sequence below.
+      <description>If your Army Faction is THOUSAND SONS, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals from those listed on the right. To do so,  select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has attempted to manifest this turn, then take a Psychic test for that model by following the sequence below.
 
 
 PSYCHIC TEST SEQUENCE

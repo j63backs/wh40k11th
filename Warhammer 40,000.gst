@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition" revision="88" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 11th Edition" revision="88" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
-    <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
+    <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-11e" publisherUrl="https://github.com/j63backs/wh40k11th"/>
+    <publication name="11th Edition Core Rules" id="4dd6-5142-457b-3db3" hidden="false" shortName="11th Ed Core"/>
   </publications>
   <costTypes>
     <costType id="51b2-306e-1021-d207" name="pts" defaultCostLimit="-1" hidden="false">
@@ -1087,8 +1088,9 @@ Each time a unit that is part of an Attached unit is destroyed, it does not have
       <description>Weapons with **[DEVASTATING WOUNDS]** in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>
       <alias>DEVASTATING WOUNDS</alias>
     </rule>
-    <rule id="fc8a-8c24-bae9-cc1c" name="Assault" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>Weapons with **[ASSAULT]** in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
+    <rule id="fc8a-8c24-bae9-cc1c" name="Assault" publicationId="4dd6-5142-457b-3db3" page="79" hidden="false">
+      <description>Units containing one or more models with an **[ASSAULT]** weapon can shoot using ^^**assault shooting**^^ (10.05).</description>
+      <alias>24.04</alias>
     </rule>
     <rule id="115b-79dc-f723-d761" name="Extra Attacks" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[EXTRA ATTACKS]** in their profile are known as Extra Attacks weapons. Each time the bearer of one or more Extra Attacks weapons fights, it makes attacks with each of the Extra Attacks melee weapons it is equipped with and it makes attacks with one of the melee weapons it is equipped with that does not have the [EXTRA ATTACKS] ability (if any). The number of attacks made with an Extra Attacks weapon cannot be modified by other rules, unless that weapon’s name is explicitly specified in that rule.</description>
@@ -1096,8 +1098,9 @@ Each time a unit that is part of an Attached unit is destroyed, it does not have
     <rule id="cf93-ad4d-2f08-a79d" name="Twin-linked" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
     </rule>
-    <rule id="4111-82e3-9444-e942" name="Anti-" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
+    <rule id="4111-82e3-9444-e942" name="Anti-" publicationId="4dd6-5142-457b-3db3" page="79" hidden="false">
+      <description>This ability always takes the form **[ANTI‑X Y+]**. Each time an attack is made with an **[ANTI]** weapon, if the target unit has the keyword denoted by X, an unmodified wound roll of Y+ is a critical wound.</description>
+      <alias>24.03</alias>
     </rule>
     <rule id="1897-c22c-9597-12b1" name="Sustained Hits" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[SUSTAINED HITS X]** in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, if a Critical Hit is rolled, that attack scores a number of additional hits on the target as denoted by ‘x’</description>
@@ -1112,8 +1115,12 @@ Each time a unit that is part of an Attached unit is destroyed, it does not have
     <rule id="9bf4-280f-bbe2-6fbb" name="Feel No Pain" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
       <description>Some models have &apos;Feel No Pain x+&apos; listed in their abilities. Each time a model with this ability suffers damage and so would lose a wound (including wounds lost due to mortal wounds), roll one D6: if the result is greater than or equal to the number denoted by &apos;x: that wound is ignored and is not lost. If a model has more than one Feel No Pain ability, you can only use one of those abilities each time that model suffers damage and so would lose a wound.</description>
     </rule>
-    <rule id="6c1f-1cf7-ff25-c99e" name="Blast" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with **[BLAST]** in their profile are known as Blast weapons, and they make a random number of attacks. Each time you determine how many attacks are made with a Blast weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model’s army (including its own unit).</description>
+    <rule id="6c1f-1cf7-ff25-c99e" name="Blast" publicationId="4dd6-5142-457b-3db3" page="79" hidden="false">
+      <description>Each time you gather **attack dice** for a **[BLAST]** weapon, add one additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down).
+
+
+If this ability takes the form **[BLAST X]**, each time you gather **attack dice** for such a weapon, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down) instead.</description>
+      <alias>24.05</alias>
     </rule>
     <rule id="9143-31ae-e0a6-6007" name="Precision" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
       <description>Weapons with **[PRECISION]** in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a Character model in that unit is visible to the attacking model, the attacking model’s player can choose to have that attack allocated to that Character model instead of following the normal attack sequence.</description>
@@ -1150,13 +1157,13 @@ A unit that moves using this ability must end that move more than 9&quot; horizo
     <rule id="c05d-f4c3-f091-4938" name="Infiltrators" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9&quot; horizontally away from the enemy deployment zone and all enemy models.</description>
     </rule>
-    <rule id="7cb5-dd6b-dd87-ad3b" name="Deep Strike" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
-      <description>During the Declare Battle Formations step, if every model in a unit has this ability, you can set it up in Reserves instead of setting it up on the battlefield. If you do, in the Reinforcements step of one of your Movement phases you can set up this unit anywhere on the battlefield that is more than 9&quot; horizontally away from all enemy models.
-
-If a unit with the Deep Strike ability arrives from Strategic Reserves, the controlling player can choose for that unit to be set up either using the rules for Strategic Reserves or using the Deep Strike ability.</description>
+    <rule id="7cb5-dd6b-dd87-ad3b" name="Deep Strike" publicationId="4dd6-5142-457b-3db3" page="80" hidden="false">
+      <description>Each time this unit makes an **ingress move** (20.04), if every model in this unit has this ability, it can be set up anywhere on the  battlefield that is more than 8&quot; horizontally from all enemy units, even if that is within your opponent’s deployment zone.</description>
+      <alias>24.09</alias>
     </rule>
-    <rule id="b68a-5ded-65ac-98c" name="Deadly Demise" publicationId="48fc-15aa-b307-9443" page="23" hidden="false">
-      <description>Some models have &apos;Deadly Demise x&apos; listed in their abilities. When such a model is destroyed, roll one D6 before removing it from play (if such a model is a TRANSPORT, roll before any embarked models disembark). On a 6, each unit within 6&quot; of that model suffers a number of mortal wounds denoted by &apos;x&apos; (if this is a random number, roll separately for each unit within 6&quot;).</description>
+    <rule id="b68a-5ded-65ac-98c" name="Deadly Demise" publicationId="4dd6-5142-457b-3db3" page="80" hidden="false">
+      <description>This ability always takes the form **Deadly Demise X**. Each time a model in this unit is **destroyed**, after the units embarked within it (if any) have made their **emergency disembark moves**, roll one D6. On a 6, that model suffers a **deadly demise**; each unit within 6&quot; of that model suffers a number of **mortal wounds** denoted by **X** (if this is a random number, roll separately for each unit within 6&quot;).</description>
+      <alias>24.08</alias>
     </rule>
     <rule id="bec5-4288-34a6-ccfa" name="Stealth" publicationId="48fc-15aa-b307-9443" page="20" hidden="false">
       <description>If every model in a unit has this ability, then each time a ranged attack is made against it, subtract 1 from that attack’s Hit roll.</description>
@@ -1192,6 +1199,24 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule name="Reconnaissance" id="15db-4df2-0913-ac78" hidden="false"/>
     <rule name="Priority Assets" id="f8ee-10bc-be90-65d1" hidden="false"/>
     <rule name="Purge the foe" id="7498-29df-7634-6df4" hidden="false"/>
+    <rule name="Frame" id="88df-5150-ba1a-14ae" hidden="false">
+      <description>Some models do not have a base; many of these are **^^Monster^^**/**^^Vehicle^^** models. Such models have the **^^Frame^^** keyword, as do some other large models. Whenever a rule refers to a model’s position in relation to anything else on the battlefield (e.g. when measuring distances), if that model has the **^^Frame^^** keyword, unless otherwise stated, measure to and from the closest point on that model (so not necessarily from its base, if it has one).
+
+When rotating a **^^Frame^^** model as part of a move, if that model does not have a base, turn it any amount around its central axis, while keeping it upright.</description>
+    </rule>
+    <rule name="Cleave" id="cdc3-8e26-23f8-5ce9" hidden="false" publicationId="4dd6-5142-457b-3db3" page="79">
+      <alias>24.06</alias>
+      <description>This ability always takes the form **[CLEAVE X]**. Each time you gather **attack dice** for a **[CLEAVE]** weapon, if you only selected one target for all of that weapon’s attacks, add X additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down).</description>
+    </rule>
+    <rule name="Close Quarters" id="7dc1-251d-feb4-c839" hidden="false" publicationId="4dd6-5142-457b-3db3" page="80">
+      <alias>24.07</alias>
+      <description>Units containing one or more models with a **[CLOSE‑QUARTERS]** weapon can shoot using **close‑quarters shooting** (10.06).
+
+
+When using another **shooting type**, for each model in that unit (excluding ^^**Monster**^^/^^**Vehicle**^^ models), you can only select one of the following to make attacks with:
+▪ One or more of its **[CLOSE‑QUARTERS]** weapons.
+▪ One or more of its other ranged weapons.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fa4e-5ac8-11a6-78d2" name="Fortification" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
